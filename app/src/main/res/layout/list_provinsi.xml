@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FAEBEF"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_fix_prov"
+            android:text="Provinsi :"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content_provinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/tv_fix_prov"
+            android:text="Sumatra Barat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_fix_ibukota"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fix_prov"
+            android:layout_marginTop="0dp"
+            android:text="Ibukota  :" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content_ibukota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_below="@+id/tv_content_provinsi"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/tv_fix_ibukota"
+            android:text="Padang" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_content"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+
+</LinearLayout>
